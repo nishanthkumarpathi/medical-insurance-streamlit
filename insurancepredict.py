@@ -46,7 +46,6 @@ def main():
 
     # Calculate Insurance Button
     if st.button("Calculate Insurance"):
-        st.write('Calculating Insurance Cost...')
         predicted_value = insurance_prediction([age, gender, bmi, children, smoker, region])
         st.write('The Insurance Cost is USD ', predicted_value)
 
